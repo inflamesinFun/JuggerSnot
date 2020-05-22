@@ -43,7 +43,7 @@ async def port_hack(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
             "`Hacking... 100%\n█████████HACKED███████████ `",
-            "`Targeted Account Hacked...\n\nPay 69$ To Remove this hack..`"
+            "`Targeted Account Hacked by Turhan...\n\n Nude göndermezsen hesabını sileriz..`"
         ]
 
     for i in animation_ttl:
