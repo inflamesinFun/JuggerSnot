@@ -29,8 +29,8 @@ Herhangi bir istek & şikâyet & öneri varsa [destek grubuna](https://t.me/turh
 
 ```
     Userbottan dolayı; Telegram hesabınız yasaklanabilir.
-    Bu bir açık kaynaklı projedir, yaptığınız her işlemden kendiniz sorumlusunuz. Kesinlikle Asena yöneticileri sorumluluk kabul etmemektedir.
-    Asenayı kurarak bu sorumlulukları kabul etmiş sayılırsınız.
+    Bu bir açık kaynaklı projedir, yaptığınız her işlemden kendiniz sorumlusunuz. Kesinlikle Turhan yöneticileri sorumluluk kabul etmemektedir.
+    Turhanı kurarak bu sorumlulukları kabul etmiş sayılırsınız.
 ```
 
 ## Credit
