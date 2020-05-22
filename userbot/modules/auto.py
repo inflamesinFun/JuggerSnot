@@ -42,7 +42,7 @@ async def auto(event):
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%H:%M")
 
-        Bio = f"📅 Tarih: {DMY} | ⌚️ Saat: {HM} | @AsenaUserBot"
+        Bio = f"📅 Tarih: {DMY} | ⌚️ Saat: {HM} | @turhanuserbot"
         await event.client(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
             about=Bio
         ))
@@ -64,7 +64,7 @@ async def auto(event):
                 DMY = time.strftime("%d.%m.%Y")
                 HM = time.strftime("%H:%M")
 
-                Bio = f"📅 Tarih: {DMY} | ⌚️ Saat: {HM} | @AsenaUserBot"
+                Bio = f"📅 Tarih: {DMY} | ⌚️ Saat: {HM} | @turhanuserbot"
                 await event.client(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
                     about=Bio
                 ))
