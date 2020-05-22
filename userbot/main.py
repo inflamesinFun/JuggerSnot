@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Turhan UserBot - Yusuf Usta
 
 """ UserBot başlangıç noktası """
 import importlib
@@ -87,8 +87,8 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
-          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/AsenaSupport")
-LOGS.info("Bot sürümünüz Asena v1.3")
+          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/turhanuserbotsupport")
+LOGS.info("Bot sürümünüz Turhan v1")
 
 """
 if len(argv) not in (1, 3, 4):
