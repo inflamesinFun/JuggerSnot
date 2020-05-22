@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 
 
 """ Kimin size özel mesaj gönderebileceğini kontrol altına almanızı sağlayan UserBot modülüdür. """
@@ -22,8 +22,7 @@ from userbot.events import register
 UNAPPROVED_MSG = ("`Hey! Bu bir bot. Endişelenme.\n\n`"
                   "`Sahibim sana PM atma izni vermedi. `"
                   "`Lütfen sahibimin aktif olmasını bekleyin, o genellikle PM'leri onaylar.\n\n`"
-                  "`Bildiğim kadarıyla o kafayı yemiş insanlara PM izni vermiyor.\n\n `",
-                  "`Onaylamak için (.approve) Engellemek için (.block) .\n\n `")
+                  "`Bildiğim kadarıyla o kafayı yemiş insanlara PM izni vermiyor.`")
 # =================================================================
 
 
@@ -69,7 +68,7 @@ async def permitpm(event):
                 else:
                     COUNT_PM[event.chat_id] = COUNT_PM[event.chat_id] + 1
 
-                if COUNT_PM[event.chat_id] > 6:
+                if COUNT_PM[event.chat_id] > 4:
                     await event.respond(
                         "`Sen benim sahibimin PM'ini spamlıyorsun, bu benim hoşuma gitmiyor.`\n"
                         "`Şu an ENGELLENDIN ve SPAM olarak bildirildin, ileride değişiklik olmadığı sürece..`"

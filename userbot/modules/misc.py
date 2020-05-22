@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 
 
 """ Birkaç küçük komutu içeren UserBot modülü. """
@@ -92,7 +92,7 @@ async def restart(event):
 @register(outgoing=True, pattern="^.support$")
 async def bot_support(wannahelp):
     """ .support komutu destek grubumuzu verir. """
-    await wannahelp.edit("[Buradan](http://t.me/turhanSupport) destek grubumuza ulaşabilirsiniz.")
+    await wannahelp.edit("[Buradan](http://t.me/AsenaSupport) destek grubumuza ulaşabilirsiniz.")
 
 
 @register(outgoing=True, pattern="^.creator$")
@@ -103,7 +103,7 @@ async def creator(e):
 
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
-    await e.edit("[turhan README.md](https://github.com/quiec/turhanUserBot/blob/seden/README.md)")
+    await e.edit("[Asena README.md](https://github.com/quiec/AsenaUserBot/blob/seden/README.md)")
 
 
 # Copyright (c) Gegham Zakaryan | 2019
@@ -124,7 +124,7 @@ async def repeat(rep):
 @register(outgoing=True, pattern="^.repo$")
 async def repo_is_here(wannasee):
     """ .repo komutunun tek yaptığı şey GitHub repomuzun bağlantısını vermek. """
-    await wannasee.edit("[turhan Repo](https://github.com/quiec/turhanuserbot)")
+    await wannasee.edit("[Asena Repo](https://github.com/quiec/asenauserbot)")
 
 
 @register(outgoing=True, pattern="^.raw$")
@@ -184,7 +184,7 @@ CMD_HELP.update({
 CMD_HELP.update({
     "readme":
     ".readme\
-\nKullanım: turhan botunun GitHub'daki README.md dosyasına giden bir bağlantı."
+\nKullanım: Asena botunun GitHub'daki README.md dosyasına giden bir bağlantı."
 })
 
 CMD_HELP.update(

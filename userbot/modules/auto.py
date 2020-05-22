@@ -5,7 +5,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 
 
 import os
@@ -42,7 +42,7 @@ async def auto(event):
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%H:%M")
 
-        Bio = f"📅 Tarih: {DMY} | ⌚️ Saat: {HM} | @turhanuserbot"
+        Bio = f"📅 Tarih: {DMY} | ⌚️ Saat: {HM} | @AsenaUserBot"
         await event.client(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
             about=Bio
         ))
@@ -64,7 +64,7 @@ async def auto(event):
                 DMY = time.strftime("%d.%m.%Y")
                 HM = time.strftime("%H:%M")
 
-                Bio = f"📅 Tarih: {DMY} | ⌚️ Saat: {HM} | @turhanuserbot"
+                Bio = f"📅 Tarih: {DMY} | ⌚️ Saat: {HM} | @AsenaUserBot"
                 await event.client(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
                     about=Bio
                 ))

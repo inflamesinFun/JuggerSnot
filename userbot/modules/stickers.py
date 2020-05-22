@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 
 
 """ Çıkartma oluşturmak ya da çalmak için yapılmış UserBot modülüdür. Teşekkürler @rupansh """

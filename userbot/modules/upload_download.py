@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 
 
 """ Sunucuya dosya indirme/yükleme yapmayı sağlayan UserBot modülüdür. """
@@ -185,7 +185,7 @@ async def uploadir(udir_event):
         for single_file in lst_of_files:
             if os.path.exists(single_file):
                 # https://stackoverflow.com/a/678242/4723940
-                caption_rts = os.path.bturhanme(single_file)
+                caption_rts = os.path.basename(single_file)
                 c_time = time.time()
                 if not caption_rts.lower().endswith(".mp4"):
                     await udir_event.client.send_file(
@@ -303,7 +303,7 @@ async def zip(event):
         for single_file in filename:
             if os.path.exists(single_file):
                 # https://stackoverflow.com/a/678242/4723940
-                caption_rts = os.path.bturhanme(single_file)
+                caption_rts = os.path.basename(single_file)
                 force_document = False
                 supports_streaming = True
                 document_attributes = []
@@ -382,7 +382,7 @@ async def wupload(event):
         "letsupload": "curl -F \"file=@{full_file_path}\" https://api.letsupload.cc/upload",
         "vshare": "curl -F \"file=@{full_file_path}\" https://api.vshare.is/upload"
     }
-    filename = os.path.bturhanme(file_name)
+    filename = os.path.basename(file_name)
     try:
         selected_one = CMD_WEB[selected_transfer].format(
             full_file_path=file_name,

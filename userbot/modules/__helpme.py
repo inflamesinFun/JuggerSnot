@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 #
 
 # @Qulec tarafından yazılmıştır.
@@ -28,7 +28,7 @@ async def yardim(event):
     if tgbotusername is not None:
         results = await event.client.inline_query(
             tgbotusername,
-            "@turhanUserBot"
+            "@AsenaUserBot"
         )
         await results[0].click(
             event.chat_id,

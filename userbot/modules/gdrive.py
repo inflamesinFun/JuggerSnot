@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 
 
 import asyncio
@@ -175,7 +175,7 @@ async def upload_dir_to_gdrive(event):
         # Yetkilendirir, dosya parametrelerini edinir, dosyayı uploadlar ve URL'yi indirme için paylaşır.
         # Öncelikle alt dizin oluşturur.
         dir_id = await create_directory(
-            http, os.path.bturhanme(os.path.abspath(input_str)), parent_id)
+            http, os.path.basename(os.path.abspath(input_str)), parent_id)
         await DoTeskWithDir(http, input_str, event, dir_id)
         dir_link = "https://drive.google.com/folderview?id={}".format(dir_id)
         await event.edit(f"Google Drive bağlantın [burada]({dir_link})")

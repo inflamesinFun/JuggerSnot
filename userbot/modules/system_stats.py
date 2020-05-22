@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 
 
 """ Sunucu hakkında bilgi veren UserBot modülüdür. """
@@ -23,7 +23,7 @@ from userbot.events import register
 DEFAULTUSER = uname().node
 # ============================================
 
-ALIVE_MESAJ = ["Turhan geldi yolu açın!", "Turhan, bize ordan bi menemen 2 çay", "Turhan ordusu toplandı !"]
+ALIVE_MESAJ = ["Tanrı Türkü Korusun!", "Tengri biz menen.", "Auuu!"]
 
 @register(outgoing=True, pattern="^.sysd$")
 async def sysdetails(sysd):
@@ -77,7 +77,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "Bu arada Turhan seni çok seviyor. ❤"
+            "Bu arada Asena seni çok seviyor. ❤"
         )
 
 
@@ -127,7 +127,7 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern="^.alive$")
 async def amialive(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit(f"`{random.choice(ALIVE_MESAJ)}  Turhan çalışıyor.`")
+        await e.edit(f"`{random.choice(ALIVE_MESAJ)} 🐺 Asena çalışıyor.`")
 
 
 CMD_HELP.update(
@@ -140,5 +140,5 @@ CMD_HELP.update(
     \nKullanım: Pip modüllerinde arama yapar."})
 CMD_HELP.update({
     "alive": ".alive\
-    \nKullanım: Turhan botunun çalışıp çalışmadığını kontrol etmek için kullanılır."
+    \nKullanım: Asena botunun çalışıp çalışmadığını kontrol etmek için kullanılır."
 })

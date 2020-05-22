@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# turhan UserBot - Yusuf Usta
+# Asena UserBot - Yusuf Usta
 
 
 """
@@ -85,7 +85,7 @@ async def upstream(ups):
     ac_br = repo.active_branch.name
     if ac_br != 'master':
         await ups.edit(
-            f'**[Güncelleyici]:**` Galiba turhan botunu modifiye ettin ve kendi branşını kullanıyorsun: ({ac_br}). '
+            f'**[Güncelleyici]:**` Galiba Asena botunu modifiye ettin ve kendi branşını kullanıyorsun: ({ac_br}). '
             'Bu durum güncelleyicinin kafasını karıştırıyor,'
             'Güncelleme nereden çekilecek?'
             'Lütfen seden botunu resmi repodan kullan.`')
