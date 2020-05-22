@@ -5,7 +5,7 @@
 #
 
 # Thanks github.com/spechide for creating inline bot support.
-# Asena UserBot - Yusuf Usta
+# Turhan UserBot - Yusuf Usta
 """ UserBot hazırlanışı. """
 
 import os
@@ -262,8 +262,8 @@ else:
 
 with bot:
     try:
-        bot(JoinChannelRequest("@AsenaUserBot"))
-        bot(JoinChannelRequest("@AsenaSupport"))
+        bot(JoinChannelRequest("@turhanuserbot"))
+        bot(JoinChannelRequest("@turhanuserbotsupport"))
 
         moduller = CMD_HELP
         me = bot.get_me()
@@ -273,7 +273,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern='/start'))
         async def handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Merhaba ben` @AsenaUserBot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Asena açabilirsin; Kanala bak` @AsenaUserBot')
+                await event.reply(f'`Merhaba ben` @turhanuserbot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Asena açabilirsin; Kanala bak` @AsenaUserBot')
             else:
                 await event.reply(f'`Senin için çalışıyorum :) Seni seviyorum. ❤️`')
 
@@ -282,7 +282,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@AsenaUserBot":
+            if event.query.user_id == uid and query == "@turhanuserbot":
                 rev_text = query[::-1]
                 buttons = paginate_help(0, moduller, "helpme")
                 result = builder.article(
@@ -294,8 +294,8 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "© @AsenaUserBot",
-                    text=f"@AsenaUserBot ile güçlendirildi",
+                    "© @turhanuserbot",
+                    text=f"@turhanuserbot ile güçlendirildi",
                     buttons=[],
                     link_preview=True
                 )
@@ -311,14 +311,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "© @AsenaUserBot",
-                    text="""@AsenaUserBot'u kullanmayı deneyin!
+                    "© @turhanuserbot",
+                    text="""@turhanuserbot'u kullanmayı deneyin!
 Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın, siz başkasının botunu yönetemezsiniz! Alttaki GitHub adresinden tüm kurulum detayları anlatılmıştır.""",
                     buttons=[
-                        [custom.Button.url("Kanala Katıl", "https://t.me/AsenaUserBot"), custom.Button.url(
-                            "Gruba Katıl", "https://t.me/AsenaSupport")],
+                        [custom.Button.url("Kanala Katıl", "https://t.me/turhanuserbot"), custom.Button.url(
+                            "Gruba Katıl", "https://t.me/turhanuserbot")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/quiec/AsenaUserBot")]
+                            "GitHub", "https://github.com/XNulI/turhanuserbot/")]
                     ],
                     link_preview=False
                 )
@@ -354,7 +354,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = "Lütfen kendine bir @AsenaUserBot aç, benim mesajlarımı düzenlemeye çalışma!"
+                reply_pop_up_alert = "Lütfen kendine bir @turhanuserbot aç, benim mesajlarımı düzenlemeye çalışma!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -376,7 +376,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
                         modul_name)
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
             else:
-                reply_pop_up_alert = "Lütfen kendine bir @AsenaUserBot aç, benim mesajlarımı düzenlemeye çalışma!"
+                reply_pop_up_alert = "Lütfen kendine bir @turhanuserbot aç, benim mesajlarımı düzenlemeye çalışma!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     except:
         LOGS.info(
