@@ -74,10 +74,7 @@
       "value": "/usr/bin/chromium-browser",
       "required": false
     },
-    "OPEN_WEATHER_MAP_APPID": {
-      "description": "https://api.openweathermap.org/data/2.5/weather adresinden kendi APPID'inizi (API key) edinin.",
-      "required": false
-    },
+
     "BOTLOG": {
       "description": "# DOKUNMA #",
       "value": "False"
@@ -142,26 +139,7 @@
       "description": "Google Drive için client id girin.",
       "required": false
     },
-    "LASTFM_API": {
-      "description": "Last.FM modülü için API Key. [Şuradan bir tane alın - https://www.last.fm/api/account/create]",
-      "required": false
-    },
-    "LASTFM_SECRET": {
-      "description": "Last.FM modülü için SECRET Key. [Şuradan bir tane alın - https://www.last.fm/api/account/create]",
-      "required": false
-    },
-    "LASTFM_USERNAME": {
-      "description": "Last.FM Kullanıcı adı",
-      "required": false
-    },
-    "LASTFM_PASSWORD": {
-      "description": "Last.FM Şifre",
-      "required": false
-    },
-    "BIO_PREFIX": {
-      "description": "Last.FM Modülü Biyografi için önek.",
-      "required": false
-    },
+    
     "DEFAULT_BIO": {
       "description": "Varsayılan profil biyografisi.",
       "value": "#NoTeamJustTurhan",
