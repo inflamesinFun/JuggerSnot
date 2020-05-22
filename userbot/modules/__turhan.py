@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Turhan UserBot - Yusuf Usta
+# turhan UserBot - Yusuf Usta
 #
 
 """ UserBot yardım komutu """
@@ -14,7 +14,7 @@ from userbot.events import register
 
 @register(outgoing=True, pattern="^.turhan(?: |$)(.*)")
 async def turhan(event):
-    """ .asena komutu için """
+    """ .turhan komutu için """
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
