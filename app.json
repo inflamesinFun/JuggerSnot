@@ -1,18 +1,18 @@
 {
   "name": "UserBot",
-  "description": "Turhan UserBot",
-  "logo": "https://i.imgyukle.com/2020/05/22/yrdk3x.jpg",
+  "description": "Asena UserBot",
+  "logo": "https://i.imgur.com/ZLi4nDP.jpg",
   "keywords": [
     "telegram",
     "userbot",
-	"Turhan",
+	"Asena",
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/XNulI/turhanuserbot",
-  "website":   "https://google.com",
-  "success_url": "https://github.com/XNulI/turhanuserbot",
+  "repository": "https://github.com/quiec/AsenaUserbot",
+  "website":   "https://quiec.tech",
+  "success_url": "https://t.me/SedenUserBotSupport",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -24,7 +24,7 @@
       "required": true
     },
     "PLUGIN_CHANNEL_ID": {
-      "description": "İsteğe bağlıdır, almak için @turhanuserbot",
+      "description": "İsteğe bağlıdır, almak için @AsenaKaliciPlugin",
       "required": false
     },
     "STRING_SESSION": {
@@ -46,7 +46,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork sağlamanız durumunda repo URL'nizi buraya ekleyin. Varsayılan olarak kendi repo adresimiz eklidir.",
-      "value": "https://github.com/XNulI/turhanuserbot",
+      "value": "https://github.com/Quiec/AsenaUserBot",
       "required": true
     },
     "COUNTRY": {
@@ -74,7 +74,10 @@
       "value": "/usr/bin/chromium-browser",
       "required": false
     },
-
+    "OPEN_WEATHER_MAP_APPID": {
+      "description": "https://api.openweathermap.org/data/2.5/weather adresinden kendi APPID'inizi (API key) edinin.",
+      "required": false
+    },
     "BOTLOG": {
       "description": "# DOKUNMA #",
       "value": "False"
@@ -139,10 +142,29 @@
       "description": "Google Drive için client id girin.",
       "required": false
     },
-    
+    "LASTFM_API": {
+      "description": "Last.FM modülü için API Key. [Şuradan bir tane alın - https://www.last.fm/api/account/create]",
+      "required": false
+    },
+    "LASTFM_SECRET": {
+      "description": "Last.FM modülü için SECRET Key. [Şuradan bir tane alın - https://www.last.fm/api/account/create]",
+      "required": false
+    },
+    "LASTFM_USERNAME": {
+      "description": "Last.FM Kullanıcı adı",
+      "required": false
+    },
+    "LASTFM_PASSWORD": {
+      "description": "Last.FM Şifre",
+      "required": false
+    },
+    "BIO_PREFIX": {
+      "description": "Last.FM Modülü Biyografi için önek.",
+      "required": false
+    },
     "DEFAULT_BIO": {
       "description": "Varsayılan profil biyografisi.",
-      "value": "#NoTeamJustTurhan",
+      "value": "#TeamDerUntergang",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {
