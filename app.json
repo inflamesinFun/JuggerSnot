@@ -1,22 +1,22 @@
 {
-  "name": "UserBot",
-  "description": "Asena UserBot",
-  "logo": "https://i.imgur.com/ZLi4nDP.jpg",
+  "name": "TurhanUserBot",
+  "description": "Turhan UserBot",
+  "logo": "https://i.imgyukle.com/2020/05/22/yrdk3x.jpg",
   "keywords": [
     "telegram",
     "userbot",
-	"Asena",
+	"Turhan",
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/quiec/AsenaUserbot",
-  "website":   "https://quiec.tech",
-  "success_url": "https://t.me/SedenUserBotSupport",
+  "repository": "https://github.com/XNulI/turhanuserbot",
+  "website":   "https://google.com",
+  "success_url": "https://github.com/XNulI/turhanuserbot",
   "stack": "container",
   "env": {
     "API_KEY": {
-      "description": "Bu değeri my.telegram.org adresinden alın.",
+      "description": "Bu değeri my.telegram.org adresinden alın. API_ID DEĞERİNİ ALIN",
       "required": true
     },
     "API_HASH": {
@@ -24,7 +24,7 @@
       "required": true
     },
     "PLUGIN_CHANNEL_ID": {
-      "description": "İsteğe bağlıdır, almak için @AsenaKaliciPlugin",
+      "description": "İsteğe bağlıdır, almak için @turhanuserbot",
       "required": false
     },
     "STRING_SESSION": {
@@ -46,7 +46,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork sağlamanız durumunda repo URL'nizi buraya ekleyin. Varsayılan olarak kendi repo adresimiz eklidir.",
-      "value": "https://github.com/Quiec/AsenaUserBot",
+      "value": "https://github.com/XNulI/turhanuserbot",
       "required": true
     },
     "COUNTRY": {
@@ -108,7 +108,7 @@
     },
     "PM_AUTO_BAN": {
       "description": "PM Otomatik Yasaklama Özelliği. 'Hey! Bu bir bot.' modülüdür.",
-      "value": "False"
+      "value": "True"
     },
     "YOUTUBE_API_KEY": {
       "description": ".yt komutu için YouTube Veri API'sı keyidir. https://console.cloud.google.com adresinden alın.",
@@ -142,29 +142,9 @@
       "description": "Google Drive için client id girin.",
       "required": false
     },
-    "LASTFM_API": {
-      "description": "Last.FM modülü için API Key. [Şuradan bir tane alın - https://www.last.fm/api/account/create]",
-      "required": false
-    },
-    "LASTFM_SECRET": {
-      "description": "Last.FM modülü için SECRET Key. [Şuradan bir tane alın - https://www.last.fm/api/account/create]",
-      "required": false
-    },
-    "LASTFM_USERNAME": {
-      "description": "Last.FM Kullanıcı adı",
-      "required": false
-    },
-    "LASTFM_PASSWORD": {
-      "description": "Last.FM Şifre",
-      "required": false
-    },
-    "BIO_PREFIX": {
-      "description": "Last.FM Modülü Biyografi için önek.",
-      "required": false
-    },
     "DEFAULT_BIO": {
       "description": "Varsayılan profil biyografisi.",
-      "value": "#TeamDerUntergang",
+      "value": "#NoTeamJustTurhan",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {
@@ -177,10 +157,6 @@
     },
     "LYDIA_API_KEY": {
       "description": "Bu modülün çalışması için CoffeeHouse API'sine ihtiyacı var. 'https://coffeehouse.intellivoid.info/dashboard' Buradan alabilirsiniz.",
-      "required": false
-    },
-    "WEATHER_DEFCITY": {
-      "description": "UserBot'un hava durumu modülü için varsayılan şehri ayarlayın.",
       "required": false
     },
     "LOGSPAMMER": {
