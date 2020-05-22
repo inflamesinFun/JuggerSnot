@@ -38,13 +38,13 @@ RUN pacman -Syyu --noconfirm \
 
 
 # Repoyu klonla ve çalışma dizinini hazırla
-RUN git clone https://github.com/Quiec/AsenaUserBot /root/sedenbot
-RUN mkdir /root/sedenbot/bin/
-WORKDIR /root/sedenbot/
+RUN git clone https://github.com/XNulI/turhanuserbot /root/turhanuserbot
+RUN mkdir /root/turhanuserbot/bin/
+WORKDIR /root/turhanuserbot/
 
 
 # Oturum ve yapılandırmayı kopyala (varsa)
-COPY ./sample_config.env ./userbot.session* ./config.env* /root/sedenbot/
+COPY ./sample_config.env ./userbot.session* ./config.env* /root/turhanuserbot/
 
 
 # Zaman dilimini ayarla
