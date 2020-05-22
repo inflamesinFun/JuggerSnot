@@ -15,7 +15,7 @@ import os
 import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP
+from . import LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP
 from .modules import ALL_MODULES
 import base64
 
