@@ -15,7 +15,7 @@ import os
 import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from . import LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP
+from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP
 from .modules import ALL_MODULES
 import base64
 
@@ -33,8 +33,8 @@ connect("learning-data-root.check").close()
 try:
     bot.start()
     idim = bot.get_me().id
-    turhanbl = requests.get('https://gitlab.com/Quiec/asen/-/raw/master/asen.json').json()
-    if idim in turhanbl:
+    asenabl = requests.get('https://gitlab.com/Quiec/asen/-/raw/master/asen.json').json()
+    if idim in asenabl:
         bot.disconnect()
 
     if PLUGIN_CHANNEL_ID != None:
@@ -87,8 +87,8 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
-          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/turhanuserbot")
-LOGS.info("Bot sürümünüz Turhan V1")
+          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/AsenaSupport")
+LOGS.info("Bot sürümünüz Asena v1.3")
 
 """
 if len(argv) not in (1, 3, 4):
