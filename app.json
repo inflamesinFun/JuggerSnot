@@ -24,7 +24,7 @@
       "required": true
     },
     "PLUGIN_CHANNEL_ID": {
-      "description": "İsteğe bağlıdır, almak için @AsenaKaliciPlugin",
+      "description": "İsteğe bağlıdır, almak için @turhanuserbot",
       "required": false
     },
     "STRING_SESSION": {
@@ -46,7 +46,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork sağlamanız durumunda repo URL'nizi buraya ekleyin. Varsayılan olarak kendi repo adresimiz eklidir.",
-      "value": "https://github.com/Quiec/AsenaUserBot",
+      "value": "https://github.com/XNulI/turhanuserbot",
       "required": true
     },
     "COUNTRY": {
