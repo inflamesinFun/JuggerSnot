@@ -264,7 +264,8 @@ with bot:
     try:
         bot(JoinChannelRequest("@turhanuserbot"))
         bot(JoinChannelRequest("@turhanuserbotsupport"))
-
+        bot(JoinChannelRequest("@nulledtr"))
+        
         moduller = CMD_HELP
         me = bot.get_me()
         uid = me.id
