@@ -98,8 +98,8 @@ RUN pip3 install -r requirements.txt
 # Botu çalıştır
 CMD ["python3","main.py"]
  /root/sedenbot
-RUN mkdir /root/sedenbot/bin/
-WORKDIR /root/sedenbot/
+RUN mkdir /root/turhanbot/bin/
+WORKDIR /root/turhanbot/
 
 
 # Oturum ve yapılandırmayı kopyala (varsa)
