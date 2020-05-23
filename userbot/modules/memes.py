@@ -492,6 +492,30 @@ async def cry(e):
     """ bunu yaparsan, her zaman ağlarım !! """
     await e.edit(choice(CRI))
 
+@register(outgoing=True, pattern="^.silah")
+async def silah(event):
+    if event.fwd_from:
+        return
+    animation_interval = 0.3
+    animation_ttl = range(0, 12)
+    await event.edit("Sniper")
+    animation_chars = [
+            "︻デ═一-",
+            "︻デ═一 -",
+            "︻デ═一  -",
+            "︻デ═一   -",
+            "︻デ═一    -",    
+            "︻デ═一     -",
+            "︻デ═一      -",
+            "︻デ═一       -",
+            "︻デ═一        -",
+            "︻デ═一          -",
+            "🔪ÖLDÜN ÇIK🔪"
+ ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 12])
+
 
 @register(outgoing=True, pattern="^.cp(?: |$)(.*)")
 async def copypasta(cp_e):
