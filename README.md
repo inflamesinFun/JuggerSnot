@@ -41,3 +41,6 @@ Thanks for;
 [Tdug Team for Translations](https://github.com/TeamDerUntergang)
 
 [Spechide for Inline Bot Plugin](https://github.com/Spechide)
+
+
+Developing with Asena 
