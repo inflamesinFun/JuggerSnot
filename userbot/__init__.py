@@ -274,9 +274,9 @@ with bot:
         @tgbot.on(events.NewMessage(pattern='/start'))
         async def handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Merhaba ben` @turhanuserbot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Asena açabilirsin; Kanala bak` @AsenaUserBot')
+                await event.reply('`Merhaba ben` @turhanuserbot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Asena açabilirsin; Kanala bak` @AsenaUserBot')
             else:
-                await event.reply(f'`Senin için çalışıyorum :) Seni seviyorum. ❤️`')
+                await event.reply('`Senin için çalışıyorum :) Seni seviyorum. ❤️`')
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
@@ -287,7 +287,7 @@ with bot:
                 rev_text = query[::-1]
                 buttons = paginate_help(0, moduller, "helpme")
                 result = builder.article(
-                    f"Lütfen Sadece .yardım Komutu İle Kullanın",
+                    "Lütfen Sadece .yardım Komutu İle Kullanın",
                     text="{}\nYüklenen Modül Sayısı: {}".format(
                         "Merhaba! Ben @AsenaUserBot kullanıyorum!\n\nhttps://github.com/quiec/AsenaUserBot", len(moduller)),
                     buttons=buttons,
@@ -296,7 +296,7 @@ with bot:
             elif query.startswith("tb_btn"):
                 result = builder.article(
                     "© @turhanuserbot",
-                    text=f"@turhanuserbot ile güçlendirildi",
+                    text="@turhanuserbot ile güçlendirildi",
                     buttons=[],
                     link_preview=True
                 )
