@@ -492,12 +492,12 @@ async def cry(e):
     """ bunu yaparsan, her zaman ağlarım !! """
     await e.edit(choice(CRI))
 
-@register(outgoing=True, pattern="^.silah")
+@register(outgoing=True, pattern="^.silah$")
 async def silah(event):
     if event.fwd_from:
         return
     animation_interval = 0.3
-    animation_ttl = range(0, 12)
+    animation_ttl = range(0, 11)
     await event.edit("Sniper")
     animation_chars = [
             "︻デ═一-",
@@ -514,7 +514,7 @@ async def silah(event):
  ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 12])
+        await event.edit(animation_chars[i % 11])
 
 
 @register(outgoing=True, pattern="^.cp(?: |$)(.*)")
