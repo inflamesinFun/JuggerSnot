@@ -125,12 +125,12 @@ async def promote(promt):
         await promt.edit(NO_ADMIN)
         return
 
-    new_rights = ChatAdminRights(add_admins=True,
+    new_rights = ChatAdminRights(add_admins=False,
                                  invite_users=True,
-                                 change_info=True,
-                                 ban_users=True,
-                                 delete_messages=True,
-                                 pin_messages=True)
+                                 change_info=False,
+                                 ban_users=False,
+                                 delete_messages=False,
+                                 pin_messages=False)
 
     await promt.edit("`Yetkilendiriliyor...`")
     user, rank = await get_user_from_event(promt)
