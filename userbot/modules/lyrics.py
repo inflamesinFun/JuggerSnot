@@ -13,7 +13,7 @@ import random
 import asyncio
 
 from userbot.events import register
-from userbot import CMD_HELP, LOGS, GENIUS
+from userbot import CMD_HELP,  GENIUS
 
 @register(outgoing=True, pattern="^.lyrics(?: |$)(.*)")
 async def lyrics(lyric):
