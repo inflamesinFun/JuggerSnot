@@ -110,55 +110,6 @@ async def set_group_photo(gpic):
             await gpic.edit(PP_ERROR)
 
 
-@register(outgoing=True, pattern="^.promote(?: |$)(.*)")
-@register(incoming=True, from_users=BRAIN_CHECKER, pattern="^.promote(?: |$)(.*)")
-async def promote(promt):
-    """ .promote komutu ile belirlenen kişiyi yönetici yapar """
-    # Hedef sohbeti almak
-    chat = await promt.get_chat()
-    # Yetkiyi sorgula
-    admin = chat.admin_rights
-    creator = chat.creator
-
-    # Yönetici değilse geri dön
-    if not admin and not creator:
-        await promt.edit(NO_ADMIN)
-        return
-
-    new_rights = ChatAdminRights(add_admins=False,
-                                 invite_users=True,
-                                 change_info=False,
-                                 ban_users=False,
-                                 delete_messages=False,
-                                 pin_messages=False)
-
-    await promt.edit("`Yetkilendiriliyor...`")
-    user, rank = await get_user_from_event(promt)
-    if not rank:
-        rank = "Yönetici"  # Her ihtimale karşı.
-    if user:
-        pass
-    else:
-        return
-
-    # Geçerli kullanıcı yönetici veya sahip ise tanıtmaya çalışalım
-    try:
-        await promt.client(
-            EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Başarıyla yetkilendirildi!`")
-
-    # Telethon BadRequestError hatası verirse
-    # yönetici yapma yetkimiz yoktur
-    except:
-        await promt.edit(NO_PERM)
-        return
-
-    # Yetkilendirme işi başarılı olursa günlüğe belirtelim
-    if BOTLOG:
-        await promt.client.send_message(
-            BOTLOG_CHATID, "#YETKI\n"
-            f"KULLANICI: [{user.first_name}](tg://user?id={user.id})\n"
-            f"GRUP: {promt.chat.title}(`{promt.chat_id}`)")
 
 
 @register(outgoing=True, pattern="^.demote(?: |$)(.*)")
