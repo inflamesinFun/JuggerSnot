@@ -9,7 +9,7 @@
 
 import os
 import lyricsgenius
-import random
+
 import asyncio
 
 from userbot.events import register
