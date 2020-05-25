@@ -23,7 +23,7 @@ from userbot.events import register
 DEFAULTUSER = uname().node
 # ============================================
 
-ALIVE_MESAJ = ["Turhan geldi yolu açın!", "Turhan, bize ordan bi menemen 2 çay", "Turhan ordusu toplandı !"]
+ALIVE_MESAJ = ["JuggerSnot 1.0 çalışıyor..."]
 
 @register(outgoing=True, pattern="^.sysd$")
 async def sysdetails(sysd):
@@ -77,7 +77,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "Bu arada Turhan seni çok seviyor. ❤"
+            "Bu arada JuggerSnot seni çok seviyor. ❤"
         )
 
 
