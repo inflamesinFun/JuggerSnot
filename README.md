@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://i.hizliresim.com/CkMQjH.jpg" width="200" height="200">
-  <h1>Turhan UserBot</h1>
+  <h1>JuggerSnot Userbot</h1>
 </div>
 <p align="center">
     JuggerSnot UserBot, Telegram kullanmanızı kolaylaştıran bir bottur.
