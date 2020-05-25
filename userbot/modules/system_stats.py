@@ -23,7 +23,7 @@ from userbot.events import register
 DEFAULTUSER = uname().node
 # ============================================
 
-ALIVE_MESAJ = ["JuggerSnot 1.0 çalışıyor..."]
+ALIVE_MESAJ = ["JuggerSnot 1.0 çalışıyor !"]
 
 @register(outgoing=True, pattern="^.sysd$")
 async def sysdetails(sysd):
