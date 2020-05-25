@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="https://i.imgyukle.com/2020/05/22/yrdk3x.jpg" width="200" height="200">
+  <img src="https://i.hizliresim.com/CkMQjH.jpg" width="200" height="200">
   <h1>Turhan UserBot</h1>
 </div>
 <p align="center">
-    Turhan UserBot, Telegram kullanmanızı kolaylaştıran bir bottur. Tamamen açık kaynaklı ve ücretsizdir.
+    JuggerSnot UserBot, Telegram kullanmanızı kolaylaştıran bir bottur.
     <br>
-        <a href="https://t.me/turhanuserbot">Telegram Kanal</a>
+        <a href="https://t.me/legends_of_telegram</a>
     <br>
 </p>
 
@@ -25,12 +25,12 @@ pip install -r requirements.txt
 python3 main.py
 ```
  
-Herhangi bir istek & şikâyet & öneri varsa [destek grubuna](https://t.me/turhanuserbotsupport) ulaşabilirsiniz.
+Herhangi bir istek & şikâyet & öneri varsa [destek grubuna](https://t.me/legends_of_telegram) ulaşabilirsiniz.
 
 ```
     Userbottan dolayı; Telegram hesabınız yasaklanabilir.
-    Bu bir açık kaynaklı projedir, yaptığınız her işlemden kendiniz sorumlusunuz. Kesinlikle Turhan yöneticileri sorumluluk kabul etmemektedir.
-    Turhanı kurarak bu sorumlulukları kabul etmiş sayılırsınız.
+    yaptığınız her işlemden kendiniz sorumlusunuz. Kesinlikle JuggerSnot yöneticileri sorumluluk kabul etmemektedir.
+    JuggerSnot kurarak bu sorumlulukları kabul etmiş sayılırsınız.
 ```
 
 ## Credit
