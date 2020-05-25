@@ -30,53 +30,7 @@ for i in ALL_ROWS:
 connect("learning-data-root.check").close()
 try:
     bot.start()
-    idim = bot.get_me().id
-    asenabl = requests.get('https://gitlab.com/Quiec/asen/-/raw/master/asen.json').json()
-    if idim in asenabl:
-        bot.disconnect()
-
-    if PLUGIN_CHANNEL_ID != None:
-        print("Pluginler Yükleniyor")
-        try:
-            KanalId = bot.get_entity(PLUGIN_CHANNEL_ID)
-            DOGRU = 1
-        except:
-            KanalId = "me"
-            bot.send_message("me", "`Plugin_Channel_Id'iniz geçersiz. Pluginler kalıcı olmuyacak.`")
-            DOGRU = 0
-
-        for plugin in bot.iter_messages(KanalId, filter=InputMessagesFilterDocument):
-            if DOGRU == 0:
-                break
-            dosyaa = plugin.file.name
-            print(dosyaa)
-            if not os.path.exists(os.getcwd() + "/userbot/modules/" + dosyaa):
-                dosya = bot.download_media(plugin, os.getcwd() + "/userbot/modules/")
-            else:
-                print("Bu Plugin Zaten Yüklü " + dosyaa)
-                dosya = dosyaa
-                break
-            try:
-                spec = importlib.util.spec_from_file_location(dosya, dosya)
-                mod = importlib.util.module_from_spec(spec)
-
-                spec.loader.exec_module(mod)
-            except Exception as e:
-                bot.send_message(KanalId, f"`Yükleme başarısız! Plugin hatalı.\n\nHata: {e}`")
-                plugin.delete()
-
-                if os.path.exists("/userbot/modules/" + dosya):
-                  os.remove(os.getcwd() + "/userbot/modules/" + dosya)
-                continue
-            
-            ndosya = dosya.replace(".py", "")
-            CMD_HELP[ndosya] = "Bu Plugin Dışarıdan Yüklenmiştir"
-            bot.send_message(KanalId, "`Plugin Yüklendi\n\Dosya: {dosya}`")
-        if KanalId != "me":
-            bot.send_message(KanalId, "`Pluginler Yüklendi`")
-    else:
-        bot.send_message("me", "`Lütfen pluginlerin kalıcı olması için PLUGIN_CHANNEL_ID'i ayarlayın.`")
-
+    
 except PhoneNumberInvalidError:
     print(INVALID_PH)
     exit(1)
